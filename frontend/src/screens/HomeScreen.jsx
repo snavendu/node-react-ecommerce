@@ -6,8 +6,8 @@ export default function HomeScreen() {
     return (
         <div>
             <div className="products">
-                {data.products.map((product) => (
-                    <li>
+                {data.products.map((product, i) => (
+                    <li key={i}>
                         <div className="product">
                             <Link to={`/products/${product._id}`}>
                                 <img
